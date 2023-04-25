@@ -1,14 +1,12 @@
 <template>
   <h1 class="titulo-1">Primer titulo H1</h1>
   <p>este es un texto normal</p>
+  <PostContainer/>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script lang="ts" setup>
+import PostContainer from "./components/PostContainer.vue";
 
-export default defineComponent({
-  name: "App",
-});
 </script>
 
 <style>

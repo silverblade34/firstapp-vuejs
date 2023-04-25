@@ -12,5 +12,10 @@
     border-radius: 8px;
     background-color: brown;
     color: #ffff;
+    border: none
+}
+.btn-acceder:hover{
+    background-color: #ffff;
+    color: brown;
 }
 </style>
