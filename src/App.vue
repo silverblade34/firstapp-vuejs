@@ -3,13 +3,16 @@
   <p>este es un texto normal</p>
 -->
   <div class="app">
-    <Sidebar />
-    <router-view />
+    <!-- <SidebarComponent />
+    <router-view /> -->
+    <ClassBindVue/>
   </div>
 </template>
 
 <script lang="ts" setup>
-import Sidebar from './components/SidebarComponent.vue'
+// import SidebarComponent from './components/SidebarComponent.vue'
+import ClassBindVue from "./components/ClassBind.vue";
+
 </script>
 
 <style>
@@ -17,9 +20,10 @@ import Sidebar from './components/SidebarComponent.vue'
 
 :root {
   --primary: #00747C;
-  --secondary: #00BBC9;
-  --grissuave: #CACACA;
-  --grisfuerte: #202022;
+  --secondary: #259ba3;
+  --textohover: #adfaff;
+  --grissuave: #a5a5a5;
+  --grisfuerte: #4b4b4b;
   --sidebar-width: 300px;
   --white: #ffffff;
 }
@@ -50,5 +54,7 @@ h1 {
 main {
   flex: 1 1 0;
   padding: 2rem;
+  margin-left: calc(2rem + 52px);
+  transition: all 0.2s;
 }
 </style>
